@@ -1,0 +1,652 @@
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+ font-family: candara; 
+}
+.clearfix {
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* section conrad */ 
+section.conrad{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/slide-1-fs.jpg');
+    background-size: cover;
+    background-attachment: fixed
+}
+header{
+    padding-top: 20px;
+}
+
+.header{
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #000;
+    padding: 25px 0 20px 5%;
+}
+section.conrad div.logo{
+    width: 50%;
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+section.conrad nav{
+    width: 50%;
+    float: left;
+}
+section.conrad nav ul li{
+    display: inline-block;
+    padding-left: 15px;
+}
+section.conrad nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+section.conrad nav ul li a:hover{
+    color: #222;
+}
+section.conrad div.digital{
+    margin-top: 15%;
+    color: #fff;
+}
+section.conrad div.digital p span{
+    transition: all 0.5s ease-in-out;
+}
+section.conrad div.digital p:first-child{
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+section.conrad div.digital p:last-child:hover span{
+    display: inline-block;
+    transform: rotate(360deg)
+}
+/* section about */ 
+section.about{
+    width: 100%;
+    padding: 130px;
+}
+section.about div.creative ,section.about div.awesome ,section.about div.office{
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+}
+section.about div.creative{
+    margin-left: 0;
+}
+
+section.about div.creative h2{
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 5%
+}
+section.about div.creative p{
+    margin-bottom: 7%;
+    line-height: 1.5;
+}
+section.about div.creative p:nth-of-type(1) span{
+    font-weight: bold;
+}
+section.about div.creative p:nth-of-type(1){
+    color: #444;
+}
+section.about div.creative p:nth-of-type(2){
+    color: #888;
+    line-height: 1.2
+}
+section.about div.creative p:nth-of-type(3) a{
+    color: #777;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+section.about div.creative p:nth-of-type(3) a:hover{
+    color: #000;
+}
+section.about div.awesome h3 ,section.about div.office h3{
+    margin: 5% 0 4% 0;
+    color: #666;
+}
+section.about div.awesome p ,section.about div.office p{
+    color: #999;
+    font-size: 14px;
+}
+section.about div.awesome > div ,section.about div.office > div{
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+section.about div.awesome > div div.overlay ,section.about div.office > div div.overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none
+}
+section.about div.awesome img ,section.about div.office img{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+section.about div.awesome > div:hover img ,section.about div.office > div:hover img{
+    transform: scale(1.5);
+}
+section.about div.awesome > div:hover div.overlay ,section.about div.office > div:hover div.overlay{
+    display: block
+}
+/* section folio */ 
+section.folio{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/slide-7-fw.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    line-height: 1.7;
+}
+section.folio div.folio_part{
+    padding-top: 20%;
+}
+section.folio div.folio_part h4{
+    font-weight: normal;
+    font-size: 17px;
+}
+section.folio div.folio_part p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+section.folio div.folio_part p.two{
+    display: none;
+}
+section.folio div.folio_part span{
+    font-size: 13px;
+    font-style: italic;
+}
+section.folio div.folio_part button{
+    width: 14%;
+    padding: 14px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    outline: 0;
+}
+section.folio div.folio_part button:hover{
+    background: #000;
+    transition: all 0.5s ease-in-out;
+}
+/* section solution */
+section.solution{
+    width: 100%;
+    padding: 100px 0;
+}
+section.solution div.tailor{
+    width: 50%;
+    float: left;
+}
+section.solution div.tailor h2{
+    font-size: 2.5em;
+    margin-bottom: 3%;
+}
+
+section.solution div.tailor p:nth-of-type(1){
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+section.solution div.tailor p:nth-of-type(2){
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 2%;
+    line-height: 1.5
+    
+}
+section.solution div.tailor p:nth-of-type(3) a{
+    color: #555;
+    text-decoration: none;
+}
+section.solution div.acordion{
+    width: 50%;
+    float: left;
+}
+section.solution div.acordion h3{
+    background: #444;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+section.solution div.acordion p{
+    background: #ddd;
+    color: #555;
+    padding: 10px;
+    display: none;
+}
+/* section study */
+section.study{
+    width: 100%;
+    background: #e62739;
+}
+section.study div.app{
+    width: 50%;
+    float: left;
+    padding: 120px 5% 100px 0;
+    color: #fff;
+    
+}
+
+section.study div.app p{
+    margin-top: 2%;
+    font-size: 16px;
+    line-height: 1.5;
+     margin-bottom: 7%;
+}
+
+section.study div.app p:nth-of-type(3) a{
+    text-decoration: none;
+    color: #fff;
+}
+section.study div.download{
+    width: 50%;
+    float: right;
+    background-image: url('../images/hero-half-3.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+section.study div.download div.number{
+    width: 50%;
+    margin: 25% auto;
+    color: #fff;
+}
+section.study div.download div.number div.left{
+    width: 50%;
+    float: left;
+}
+section.study div.download div.number div.left p , section.study div.download div.number div.right p{
+    margin-bottom: 5%;
+    font-size: 3em;
+    font-weight: bold
+}
+section.study div.download div.number div.right{
+    width: 50%;
+    float: right;
+}
+/* section recent */
+section.recent{
+    width: 100%;
+    padding: 100px 0 0;
+}
+section.recent div.center{
+    text-align: center;
+}
+section.recent div.center h2{
+    font-size: 3em;
+    margin-bottom: 2%;
+}
+section.recent div.center nav span{
+    color: #888;
+    font-size: 20px;
+    padding-left: 25px;
+    text-decoration: none;
+    margin-bottom: 3%;
+    display: inline-block;
+    cursor: pointer
+}
+section.recent div.all_images .left{
+    width: 50%;
+    float: left;
+}
+section.recent div.all_images .left .bird{
+    width: 50%;
+    float: left;
+}
+section.recent div.all_images .left .bird img{
+    width: 100%;
+    
+}
+section.recent div.all_images .left .man{
+    width: 50%;
+    float: left;
+}
+section.recent div.all_images .left .man img{
+    width: 100%;
+}
+section.recent div.all_images .right{
+    width: 50%;
+    float: left;
+}
+section.recent div.all_images .right .open{
+    width: 100%
+}
+section.recent div.all_images .right .open img{
+    width: 100%;
+    background-size: cover
+}
+section.recent div.all_images .right .close{
+    width: 100%;
+    display: flex;
+}
+section.recent div.all_images .right .close > div{
+    width: 50%;
+}
+section.recent div.all_images .right .close > div:nth-of-type(1) img{
+    width: 100%;
+    float: left;
+}
+section.recent div.all_images .right .close > div:nth-of-type(2) img{
+    width: 100%;
+    float: right;
+}
+
+.mix{
+    display: none;
+}
+/* section clients */
+section.clients{
+    width: 100%;
+    padding: 100px 0;
+    background: #9068be;
+    color: #fff;
+}
+section.clients div.client{
+    width: 20%;
+    float: left;
+}
+section.clients div.client p{
+    line-height: 2.5;
+}
+section.clients div.client span{
+    color: #ddd;
+    font-size: 14px;
+}
+
+footer{
+    width: 100%;
+    padding: 100px 0;
+    background: #222;
+    color: #fff;
+    position: relative;
+}
+footer div.conrad{
+    width: 22%;
+    float: left;
+    margin-left: 2%;
+}
+footer div.conrad h3{
+    margin-bottom: 7%;
+}
+footer div.conrad a{
+    text-decoration: none;
+    line-height: 2.5;
+    color: #888;
+    display: block;
+}
+footer div.conrad P{
+    margin-bottom: 5%;
+    color: #888;
+}
+footer div.conrad input{
+    display: block;
+    background: none;
+    outline: 0;
+    padding: 10px;
+    margin-bottom: 2%;
+    color: #fff
+}
+footer div.conrad input[type=email],footer div.conrad input[type=text]{
+    border: 0;
+    border-bottom: 1px solid #888;
+}
+footer div.conrad input[type=submit]{
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 8 17px;
+}
+
+footer .footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+footer .footer div.left{
+    float: left;
+}
+footer .footer div.right{
+    float: right;
+}
+footer .footer div.right a{
+    text-decoration: none;
+    color: #fff
+}
+
+/* Start responsive  */
+
+/* Mobile */
+@media (max-width: 767px){
+    section.conrad div.logo{
+        width: 100%;
+        float: none;
+        font-size: 1.4em;
+    }
+    
+    section.conrad nav{
+        width: 100%;
+        float: none;
+    }
+    section.conrad nav ul li{
+        padding-left: 30px;
+        padding-top: 12px;
+    }
+    section.conrad div.digital{
+        margin-top: 45%;
+    }
+    section.conrad div.digital p:first-child{
+        font-size: 2em;
+    }
+    section.about div.creative, section.about div.awesome, section.about div.office{
+        width: 100%;
+        float: none;
+    }
+    section.about div.creative h2{
+        font-size: 1.8em
+    }
+    section.about div.creative p{
+        font-size: 14px;
+    }
+    section.about div.awesome p{
+        margin-bottom: 15px;
+    }
+    section.folio{
+        height: 80vh;
+    }
+    section.folio div.folio_part p{
+        font-size: 14px;
+    }
+    
+    section.about div.awesome h3, section.about div.office h3{
+        font-size: 14px;
+    }
+    section.folio div.folio_part button{
+        font-size: 12px;
+        padding: 9px 4px;
+        width: 28%;
+    }
+    section.solution div.tailor{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    section.solution div.tailor h2{
+        font-size: 2em;
+    }
+    section.solution div.tailor p:nth-of-type(1),section.solution div.tailor p:nth-of-type(2){
+        font-size: 14px;
+    }
+    section.solution div.acordion{
+        width: 100%;
+        float: none;
+    }
+    section.solution div.acordion h3{
+        font-size: 16px;
+    }
+    section.solution div.acordion p{
+        font-size: 14px;
+    }
+    section.study div.app,section.study div.download{
+        width: 100%;
+        float: none;
+    }
+    section.study div.app h2{
+        font-size: 18px;
+    }
+    section.study div.app p{
+        font-size: 14px;
+    }
+    section.study div.download div.number{
+        padding-top: 40%;
+    }
+    section.recent div.center h2{
+        font-size: 23px;
+    }
+    section.recent div.center nav span{
+        font-size: 14px;
+    }
+    section.clients div.client{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    footer div.conrad{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* laptop */
+@media (min-width: 768px) and (max-width: 991px){
+      section.conrad div.logo{
+        width: 100%;
+        float: none;
+        font-size: 1.4em;
+    }
+    
+    section.conrad nav{
+        width: 100%;
+        float: none;
+    }
+    section.conrad nav ul li{
+        padding-left: 30px;
+        padding-top: 12px;
+    }
+    
+     section.about div.creative, section.about div.awesome, section.about div.office{
+        width: 100%;
+        float: none;
+    }
+    section.about div.creative h2{
+        font-size: 1.8em
+    }
+    section.about div.creative p{
+        font-size: 14px;
+    }
+    section.about div.awesome p{
+        margin-bottom: 15px;
+    }
+    section.folio div.folio_part h4{
+        font-size: 20px;
+    }
+    section.folio div.folio_part button{
+        font-size: 16px;
+        padding: 16px 3px;
+        width: 29%;
+    }
+    
+    section.solution div.tailor{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    section.solution div.tailor h2{
+        font-size: 2em;
+    }
+    section.solution div.tailor p:nth-of-type(1),section.solution div.tailor p:nth-of-type(2){
+        font-size: 14px;
+    }
+    section.solution div.acordion{
+        width: 100%;
+        float: none;
+    }
+    section.solution div.acordion h3{
+        font-size: 16px;
+    }
+    section.solution div.acordion p{
+        font-size: 14px;
+    }
+    
+     section.study div.app,section.study div.download{
+        width: 100%;
+        float: none;
+    }
+     section.study div.download div.number{
+        padding-top: 40%;
+    }
+    
+    footer div.conrad{
+        width: 20%;
+        margin-left: 5%;
+    }
+}
+
+/* pc */
+    @media (min-width: 992px) and (max-width: 1199px){
+       section.conrad div.logo{
+        width: 100%;
+        float: none;
+        font-size: 1.8em;
+    }
+    
+    section.conrad nav{
+        width: 100%;
+        float: none;
+        text-align: center
+    }
+    section.conrad nav ul li{
+        padding-left: 30px;
+        padding-top: 12px;
+    } 
+    section.folio div.folio_part button{
+        font-size: 16px;
+        padding: 16px 3px;
+        width: 29%;
+    }    
+}
